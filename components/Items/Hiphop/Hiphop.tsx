@@ -3,22 +3,18 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import styled from "styled-components";
 
-interface IProps{
-  title: string;
-}
-const Playlists = React.memo((props: IProps) => {
-  const {title} = props;
+const Hiphop = React.memo(() => {
   return (
     <Box
       sx={{
         display: "flex",
-        flex: 2,
+        flex: 1,
         flexDirection: "column",
       }}
     >
       <StyledImgWraper>
         <img
-          src="https://image.kpopmap.com/2020/10/aespa-member-profile-1.jpg"
+          src="https://i.scdn.co/image/ab67616d0000b2737ac4d6e5ff05356fc9c9e4f5"
           alt="image"
         />
       </StyledImgWraper>
@@ -33,4 +29,4 @@ const StyledImgWraper = styled.div`
     border-radius: 5px;
   }
 `;
-export default Playlists;
+export default Hiphop;

@@ -9,7 +9,7 @@ import Header from "./Header";
 import { useRouter } from "next/router";
 import styled from "styled-components";
 
-const SIDE_BAR_W = 290;
+const SIDE_BAR_W = 255;
 const SideBar = React.memo(() => {
   const router = useRouter();
   const handleClick = (item: any) => {
