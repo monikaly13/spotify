@@ -22,6 +22,7 @@ const StyledContent = styled.div`
   padding: 0 16px;
   flex: 1;
   display: flex;
+  width: calc(100vw - var(--sidebar_w));
 `;
 
 export default Layouts;
