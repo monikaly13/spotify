@@ -5,15 +5,17 @@ import styled from "styled-components";
 
 interface IProps{
   title: string;
+  subtitle?: string;
 }
 const Playlists = React.memo((props: IProps) => {
-  const {title} = props;
+  const {title, subtitle} = props;
   return (
     <Box
       sx={{
         display: "flex",
         flex: 2,
         flexDirection: "column",
+        marginRight: 2,
       }}
     >
       <StyledImgWraper>
@@ -22,8 +24,8 @@ const Playlists = React.memo((props: IProps) => {
           alt="image"
         />
       </StyledImgWraper>
-      <Typography variant="subtitle1">Title</Typography>
-      <Typography variant="body2">subtitle</Typography>
+      <Typography variant="subtitle1">{title}</Typography>
+      {subtitle && <Typography variant="body2">{subtitle}</Typography>}
     </Box>
   );
 });
