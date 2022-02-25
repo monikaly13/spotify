@@ -8,6 +8,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+        <link rel="icon" href="Rfa.png" />
           {/* PWA primary color */}
           <link
             rel="stylesheet"
@@ -27,6 +28,7 @@ class MyDocument extends Document {
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
           />
+          <link href="https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap" rel="stylesheet"></link>
         </Head>
         <body>
           <Main />

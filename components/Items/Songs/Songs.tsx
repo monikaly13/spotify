@@ -19,7 +19,7 @@ const Songs = React.memo((props: IProps) => {
       <Stack flexDirection="row" alignItems="center">
         <StyledImgWraper>
           <img
-            src="https://i.scdn.co/image/ab67706f000000035bde8d5596efdd03f31667fe"
+            src="https://i.scdn.co/image/ccf08d0daab08ec8bcc76d549d0d62bb6da1ab14"
             alt="image"
           />
         </StyledImgWraper>

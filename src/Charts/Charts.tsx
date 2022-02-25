@@ -1,28 +1,19 @@
 import React from "react";
-import Typography from "@mui/material/Typography";
-import Stack from "@mui/material/Stack";
-import Grid from "@mui/material/Grid";
+import Track from "./../Home/Track";
+import styled from "styled-components";
 
-const Charts = React.memo(() => {
+const Songs = React.memo(() => {
   return (
-    <Stack direction="row" flex="1" sx={{ height: "550px", width: "100%" }}>
-      <Stack
-        flex="1"
-        justifyContent="center"
-        alignItems="center"
-        sx={{ backgroundColor: "red" }}
-      >
-        <div>hello</div>
-      </Stack>
-      <Stack flex="1" sx={{ backgroundColor: "green" }}>
-        <div>world</div>
-      </Stack>
-      <Grid container spacing={2}>
-        <Grid item xs={6}></Grid>
-        <Grid item xs={6}></Grid>
-      </Grid>
-    </Stack>
+    <StyledWrapper>
+      <Track title="Charts" />
+    </StyledWrapper>
   );
 });
+const StyledWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 30px 50px;
+`;
 
-export default Charts;
+export default Songs;

@@ -76,5 +76,7 @@ const News = React.memo((props: IProps) => {
 const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  width: 90%;
+  margin-left: 50px;
 `;
 export default News;
