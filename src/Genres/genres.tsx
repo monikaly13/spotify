@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Button, Stack } from "@mui/material";
 import { range } from "lodash";
-import Playlists from "./../Playlists"
+import Playlists from "./../../components/Items/Playlists";
 
 const Genres = React.memo(() => {
   return (

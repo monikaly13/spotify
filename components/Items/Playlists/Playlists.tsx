@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 import styled from "styled-components";
 
 interface IProps{
-  title: string;
+  title?: string;
   subtitle?: string;
 }
 const Playlists = React.memo((props: IProps) => {
