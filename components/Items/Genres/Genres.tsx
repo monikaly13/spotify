@@ -95,9 +95,9 @@ const Genres = React.memo(() => {
         rowHeight={200}
         gap={1}
       >
-        {itemData.map((item) => {
-          const cols = item.featured ? 2 : 1;
-          const rows = item.featured ? 2 : 1;
+        {itemData.map((item: any) => {
+          const cols = item?.featured ? 2 : 1;
+          const rows = item?.featured ? 2 : 1;
 
           return (
             <ImageListItem key={item.img} cols={cols} rows={rows}>
