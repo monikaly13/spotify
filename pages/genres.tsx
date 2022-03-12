@@ -1,5 +1,5 @@
 import Layouts from "../components/Layouts";
-import Genres from "./../src/Genres"
+import Genres from "./../components/Items/Genres"
 const GenrePage = () => {
   return (
     <Layouts>
